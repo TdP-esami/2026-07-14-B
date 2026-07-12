@@ -57,7 +57,8 @@ class View(ft.UserControl):
         self._page.controls.append(self._txt_result)
         self._page.update()
 
-
+        # popolo il menu a tendina dei generi
+        self._controller.fillDDGenres()
 
     @property
     def controller(self):
